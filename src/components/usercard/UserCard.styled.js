@@ -1,9 +1,17 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  width: 40%;
-  margin: 0 auto;
-  border: 1px solid grey;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-size: 20px;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px -2px #ccd0e8;
+  border: thick double #758d97;
+  border-radius: 20px;
 `;
 
 export const UserThumb = styled.div`
@@ -39,8 +47,9 @@ export const StatList = styled.ul`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-top: 1px solid grey;
-  background-color: lightgrey;
+  border: 1px solid #758d97;
+  border-radius: 20px;
+  background-color: #efeff0;
   text-align: center;
   list-style: none;
   margin: 0;

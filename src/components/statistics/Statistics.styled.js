@@ -1,43 +1,50 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.section`
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 20px;
-  border: 1px solid grey;
+export const Section = styled.section`
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px auto;
+  border: 2px solid #5b5b5b;
 `;
 
 export const Title = styled.h2`
-  font-size: 32px;
-  font-weight: bold;
-  border-bottom: 1px solid grey;
+  background-color: #efeef1;
+  color: #5b5b5b;
+  margin: 0;
+  padding: 26px;
+  font-size: 30px;
+  text-transform: uppercase;
 `;
 
 export const List = styled.ul`
   display: flex;
-  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+export const Item = styled.li`
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  width: 20%;
+  height: 70px;
 `;
 
-export const ListItem = styled.li`
-  width: 100%;
-  height: 100%;
-  padding: 10px 0;
-  text-align: center;
-  font-size: 22px;
-  background-color: ${randomBgColor};
+export const SpanLabel = styled.span`
+  display: flex;
+  font-weight: 700;
+  color: #efeded;
 `;
 
-function randomBgColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
-export const Label = styled.span`
-  display: block;
-  padding-bottom: 5px;
-  font-weight: bold;
-`;
-
-export const Percentage = styled.span`
-  display: block;
+export const Percent = styled.span`
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+  color: #efeded;
 `;
